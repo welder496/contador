@@ -1,0 +1,28 @@
+{
+  "name": "contadorrest",
+  "version": "1.0.0",
+  "description": "Modulo com funções para contadores",
+  "main": "contadorrest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welder496/contador.git"
+  },
+  "keywords": [
+    "contador",
+    "prefixo",
+    "descricao",
+    "valor"
+  ],
+  "author": "Welder Mauricio de Souza <welder496@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/welder496/contador/issues"
+  },
+  "homepage": "https://github.com/welder496/contador#readme",
+  "dependencies": {
+    "restler": "^3.4.0"
+  }
+}
