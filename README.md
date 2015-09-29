@@ -9,12 +9,12 @@ Funções do Módulo:
     deleteContadorByPrefixo
     deleteContadorByDescricao
     getContadorByDescricao
-    updateContadorByValor
+    updateValorContadorByPrefixo
     resetContadorByPrefixo
     getNextContadorByPrefixo
     getPriorContadorByPrefixo
     incContadorByPrefixo
     decContadorByPrefixo
-    
-    
-    
+
+
+
