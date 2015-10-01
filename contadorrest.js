@@ -105,7 +105,7 @@ module.exports = {
      deleteContadorByDescricao: function(descricao, callback){
          descricao = encodeURIComponent(descricao);
          if (descricao != "") {
-                  rest.del('http://'+host+":"+port+'/notas/contador/descricao/'+prefixo)
+                  rest.del('http://'+host+":"+port+'/notas/contador/descricao/'+descricao)
                   .on('success', function(data, response){
                            callback(data);
                   })
