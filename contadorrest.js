@@ -24,6 +24,28 @@ module.exports = {
                    callback({message: "Não foi possível inserir Contador!!"});
           }
      },
+     
+     updateContador: function(descricao, contador, callback) {
+            descricao = encodeURIComponent(descricao);
+            contador.descricao = encodeURIComponent(contador.descricao);
+            contador.prefixo = encodeURIComponent(contador.prefixo);
+            contador.contador = encodeURIComponent(contador.contador);
+            contador.casas = encodeURIComponent(contador.casas);
+            if (descricao != "") {
+                   rest.put('http://'+host+":"+port+'/notas/contador/descricao/'+descricao,
+                   {
+                           data: contador
+                   })
+                   .on('success', function(data,response){
+                           callback(data);
+                   })
+                   .on('error', function(err, response){
+                           callback({message:"Erro ao atualizar Contador!!"});
+                   })
+            } else {
+                    callback({message: "Não foi possível atualizar Contador!!"});
+            }
+     },
 
      getContadores:function(callback){
          rest.get('http://'+host+":"+port+'/notas/contador/all')
